@@ -17,8 +17,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
-
+// Explanation:
+// nestedFunction() can access variable internal because it is within the scope of myFunction(). //
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
@@ -108,6 +108,7 @@ const zooAnimals = [
   function consume(a, b, cb){
     this.a = a;
     this.b = b;
+    
   }
  
   
@@ -148,11 +149,11 @@ function greeting(firstName, lastName){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(object){
-  this.length = object.length;
-  this.width = object.width;
-  this.height = object.height;
-  return object;
+function CuboidMaker(length, width, height){
+  cuboid = [];
+  this.length = length;
+  this.width = width;
+  this.height = height;
 }
 
 
@@ -160,7 +161,9 @@ function CuboidMaker(object){
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-
+CuboidMaker.prototype.volume = function(){
+  return this.length * this.width * this.height;
+}
 
 
 
@@ -169,7 +172,9 @@ function CuboidMaker(object){
   Formula for cuboid surface area of a cube: 
   2 * (length * width + length * height + width * height)  */
 
-
+CuboidMaker.prototype.surfaceArea = function(){
+  return 2 * (length * width + length * height + width * height);
+}
 
 
 
@@ -190,8 +195,19 @@ function CuboidMaker(object){
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo{
-  constructor(object){
+  constructor(cuboidTwo, length, width, height){
+    cuboidTwo = [];
+    this.length = length;
+    this.width = width;
+    this.height = height;
+  }
 
+  volume(){
+    return this.length * this.width * this.height;
+  }
+
+  surfaceArea(){
+    return 2 * (length * width + length * height + width * height);
   }
 }
 

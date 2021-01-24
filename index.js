@@ -55,9 +55,10 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
- function animalNames(displayNames){
-  
-  return `name: ${this.animal_name}, scientific: ${this.scientific_name}`;
+ function animalNames(zooAnimals){
+  animalNames.forEach(function(animal_name, scientific_name){
+    return `name: ${this.animal_name}, scientific: ${this.scientific_name}`;
+  });
 }
 
   
@@ -68,8 +69,10 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(){
-    
+  function lowerCaseNames(zooAnimals){
+    const lowerCase = zooAnimals.map((animal_name) => {
+      return lowerCase;
+    });
 }
   
   
@@ -79,9 +82,9 @@ const zooAnimals = [
   */
  
   function lowPopulationAnimals(zooAnimals){
-    // const lowPopulation = zooAnimals.filter((population) => {
+    const lowPop = zooAnimals.filter((population) => {
       
-    // });
+    });
   }
 
    console.log(lowPopulationAnimals());
@@ -93,8 +96,10 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(  ){
-    
+  function USApop(zooAnimals){
+    const totalPop = zooAnimals.reduce(function(acc, population){
+      return totalPop;
+    });
   }
   
   

@@ -56,6 +56,7 @@ const zooAnimals = [
   */
 
  function animalNames(displayNames){
+  
   return `name: ${this.animal_name}, scientific: ${this.scientific_name}`;
 }
 
@@ -149,11 +150,10 @@ function greeting(firstName, lastName){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(length, width, height, cuboid){
-  cuboid = [];
-  this.length = length;
-  this.width = width;
-  this.height = height;
+function CuboidMaker(attrs){
+  this.length = attrs.length;
+  this.width = attrs.width;
+  this.height = attrs.height;
 }
 
 
@@ -161,7 +161,7 @@ function CuboidMaker(length, width, height, cuboid){
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-CuboidMaker.prototype.volume = function(length, width, height){
+CuboidMaker.prototype.volume = function(){
   return this.length * this.width * this.height;
 }
 
@@ -173,7 +173,7 @@ CuboidMaker.prototype.volume = function(length, width, height){
   2 * (length * width + length * height + width * height)  */
 
 CuboidMaker.prototype.surfaceArea = function(){
-  return 2 * (length * width + length * height + width * height);
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
 }
 
 
@@ -182,7 +182,17 @@ CuboidMaker.prototype.surfaceArea = function(){
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
+function Cuboid(attrs){
+  CuboidMaker.call(this, attrs);
+}
 
+Cuboid.prototype = Object.create(CuboidMaker.prototype);
+
+const cuboid = new CuboidMaker({
+  length: 4,
+  width: 5,
+  height: 5
+});
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️

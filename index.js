@@ -54,7 +54,7 @@ const zooAnimals = [
   Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
-
+ 
  function animalNames(){
     
   } 
@@ -81,9 +81,11 @@ const zooAnimals = [
   */
  
  function lowPopulationAnimals(){
-    
+    const lowPopulationAnimals = zooAnimals.filter(function(item){
+      return item.population < 5;
+    });
+    return lowPopulationAnimals;
 }
-
 
    
 

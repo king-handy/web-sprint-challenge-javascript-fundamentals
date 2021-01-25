@@ -28,10 +28,11 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation() {
+function summation(number) {
+  
+}
 
-  }
- 
+  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -101,12 +102,15 @@ const zooAnimals = [
   */
 
   function USApop(){
-    const USApop = zooAnimals.reduce(function(accumulator, item){
-      return accumulator + item;
-    }, 0);
-    return USApop;
+    const totalPop = zooAnimals.reduce(function(acc, zoo){
+      console.log("currently at: " + acc);
+      console.log("add: " + zoo.population);
+      return acc + zoo.population;
+    }, 0)
+    return totalPop;
   }
   console.log(USApop());
+  
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁

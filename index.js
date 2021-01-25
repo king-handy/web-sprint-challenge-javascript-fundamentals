@@ -28,8 +28,8 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(number) {
-  
+function summation() {
+
   }
  
 
@@ -55,11 +55,9 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
- function animalNames(zooAnimals){
-  animalNames.forEach(function(animal_name, scientific_name){
-    return `name: ${this.animal_name}, scientific: ${this.scientific_name}`;
-  });
-}
+ function animalNames(){
+  
+  } 
 
   
 
@@ -68,26 +66,23 @@ const zooAnimals = [
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
   For example: ['jackal, asiatic', .....]
   */
-
-  function lowerCaseNames(zooAnimals){
-    const lowerCase = zooAnimals.map((animal_name) => {
-      return lowerCase;
-    });
-}
   
+
+  function lowerCaseNames(){
+    
+  }
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
  
-  function lowPopulationAnimals(zooAnimals){
-    const lowPop = zooAnimals.filter((population) => {
-      
-    });
-  }
+ function lowPopulationAnimals(){
+    
+}
 
-   console.log(lowPopulationAnimals());
+
+   
 
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
@@ -96,10 +91,8 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(zooAnimals){
-    const totalPop = zooAnimals.reduce(function(acc, population){
-      return totalPop;
-    });
+  function USApop(){
+    
   }
   
   

@@ -27,23 +27,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
-
+    Method forEach loops through each item in an array once, in order; Map creates a new array with results of calling a function for each element.
 
 2. Explain the difference between a callback and a higher order function.
 
-
+    A callback can be used to pass an element to a function; Higher order function refers to the function in which the parameter is passed.
 
 3. What is closure?
 
-
+    Closure defines whether variables and functions operate within a function or with outside scope, depending on location of {}.
 
 4. Describe the four rules of the 'this' keyword.
 
-
+    a. This refers to the object owner.
+    b. This can refer to global objects.
+    c. This points to the owner of a method.
+    d. Call and apply can be used with this in explicit binding.
 
 5. Why do we need super() in an extended class?
 
-
+    Super calls the parent's constructor for access to properties and methods.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -68,17 +71,17 @@ Your finished project must include all of the following requirements
 #### Task A: Closure
 
 This challenge takes a look at closures as well as scope. 
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task B: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task D: Classes
 
